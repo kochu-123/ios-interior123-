@@ -34,7 +34,7 @@ JavaScript (for mobile menu toggle and scroll-to-top button)
 
 Installation & Usage
 
-Clone the repository:git clone https://github.com/kochu-123/ios-interior123.git
+Clone the repository:git clone https://github.com/kochu-123/ios-interior123-.git
 
 Open the project folder in VS Code or any code editor.
 
@@ -54,7 +54,7 @@ Go to Settings in your GitHub repository.
 
 Under Pages, select the branch (e.g., main) and click Save.
 
-The website will be available at https://kochu-123.github.io/ios-interior123/
+The website will be available at https://kochu-123.github.io/ios-interior123-/
 
 Contact
 
