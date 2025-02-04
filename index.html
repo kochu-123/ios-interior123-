@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOS Interior</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    <!-- Header -->
+    <header class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="logo.jpg" alt="Logo" class="h-10">
+                <h1 class="text-2xl font-bold">IOS Interior</h1>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+                ☰
+            </button>
+            <nav class="hidden md:flex space-x-6" id="menu">
+                <ul class="flex flex-col md:flex-row space-x-0 md:space-x-6 md:space-y-0 space-y-4">
+                    <li><a href="index.html" class="text-gray-700 hover:text-gray-900">Home</a></li>
+                    <li><a href="about.html" class="text-gray-700 hover:text-gray-900">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('menu').classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <section class="relative h-[400px] bg-cover bg-center flex items-center justify-center text-white text-center" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('https://source.unsplash.com/1600x900/?interior');">
+        <div class="p-6">
+            <h2 class="text-4xl font-bold mb-4 animate-fade-in">Welcome to IOS Interior</h2>
+            <p class="text-lg max-w-2xl animate-fade-in">Bringing elegance and comfort to your living spaces with modern and stylish interior designs.</p>
+            <a href="#services" class="mt-4 inline-block bg-black px-6 py-3 rounded text-white hover:bg-blue-700 transition">Get a Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container mx-auto py-16 text-center">
+        <h2 class="text-3xl font-bold mb-8">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
+            <div class="p-6 shadow-lg bg-white rounded-lg transform hover:scale-105 transition-all duration-300 hover:shadow-xl">
+                <img src="luxury.jpg" alt="Luxury Interiors" class="h-12 mx-auto mb-3">
+                <h3 class="text-xl font-bold">Luxury Interiors</h3>
+                <p class="text-gray-600 mt-2">High-end designs for premium spaces.</p>
+            </div>
+            <div class="p-6 shadow-lg bg-white rounded-lg transform hover:scale-105 transition-all duration-300 hover:shadow-xl">
+                <img src="office.jpg" alt="Office Spaces" class="h-12 mx-auto mb-3">
+                <h3 class="text-xl font-bold">Office Spaces</h3>
+                <p class="text-gray-600 mt-2">Transforming workspaces into productive environments.</p>
+            </div>
+            <div class="p-6 shadow-lg bg-white rounded-lg transform hover:scale-105 transition-all duration-300 hover:shadow-xl">
+                <img src="home.jpg" alt="Home Renovation" class="h-12 mx-auto mb-3">
+                <h3 class="text-xl font-bold">Home Renovation</h3>
+                <p class="text-gray-600 mt-2">Redefining homes with modern aesthetics.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-6 mt-16 relative">
+        <div class="flex justify-center space-x-4 mb-4">
+            <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
+            <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+            <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+        </div>
+        <p>&copy; 2025 IOS Interior. All Rights Reserved.</p>
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="absolute bottom-4 right-4 bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700">↑</button>
+    </footer>
+</body>
+
+</html>
